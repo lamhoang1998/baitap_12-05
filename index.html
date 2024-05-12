@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Tip Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Tính Tiền Tip</h1>
+			<p>
+				Vui lòng nhập vào tổng số tiền cần thanh toán, lựa chọn mức tiền tip và
+				nhập vào số người để tính tiền tip
+			</p>
+			<label for="bill">Tổng tiền thanh toán:</label>
+			<input type="number" id="bill" placeholder="nhập số tiền:" />
+			<br />
+			<label for="number-select">Phần trăm số tiền muốn tip:</label>
+			<select name="number" id="number-select">
+				<option value="">--Chọn để tip--</option>
+				<option value="5">5%-Thật tệ</option>
+				<option value="10">10%-Tồi</option>
+				<option value="15">15%-Tạm ổn</option>
+				<option value="20">20%-Tốt</option>
+				<option value="30">30%-Thật tuyệt</option>
+			</select>
+			<br />
+			<label for="number-people">Số người tip</label>
+			<input type="number" id="number-people" placeholder="nhập số người" />
+			<br />
+			<button id="calculate">Tính tiền tip</button>
+			<br />
+			<label for="total">Tổng số tiền tip:</label>
+			<span id="total"></span>
+		</div>
+		<script src="index.js"></script>
+	</body>
+</html>
